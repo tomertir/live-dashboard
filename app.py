@@ -14,6 +14,8 @@ app = dash.Dash(
     suppress_callback_exceptions=True,
     title="Live Financial Dashboard"
 )
+server = app.server
+
 #Constants
 STOCKS = {
     "AAPL":  "Apple",
