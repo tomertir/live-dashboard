@@ -1,67 +1,40 @@
-# 📈 Live Financial Dashboard
+# Live Financial Dashboard
 
-### 🚀 Live Demo
-👉 **[https://live-dashboard-41pf.onrender.com](https://live-dashboard-41pf.onrender.com)**
+Real-time stock market dashboard built with Python, Dash and Plotly. Pulls live data from Yahoo Finance and refreshes automatically.
 
-[![Python](https://img.shields.io/badge/Python-3.8+-377AB?style=flat&logo=python)](https://python.org)
-[![Dash](https://img.shields.io/badge/Dash-Plotly-FF6B6B?style=flat&logo=plotly)](https://dash.plotly.com)
-[![Live Data](https://img.shields.io/badge/Data-Yahoo%20Finance-6C3483?style=flat)](https://finance.yahoo.com)
+**Live demo:** https://live-dashboard-41pf.onrender.com
 
-> Real-time stock market analytics dashboard built with Python, Dash, and Plotly.
+## Features
 
----
+- KPI cards with live price, daily change and volume for major tech stocks
+- Interactive candlestick / line chart with volume overlay
+- Multi-stock comparison, normalized to a common baseline (base = 100)
+- "Today's Movers" – ranked best and worst performers of the day
+- Auto-refresh every 60 seconds, no API key needed
+- Custom dark theme, responsive layout, deployed on Render
 
-## ✨ Features
-
-- **Live KPI Cards** — Real-time price, daily change, and volume for top stocks
-- **Candlestick / Line Chart** — Interactive price chart with volume overlay
-- **Multi-Stock Comparison** — Normalized performance comparison (base=100)
-- **Today's Movers** — Ranked best/worst performers of the day
-- **Auto Refresh** — Data refreshes every 60 seconds
-
-## 🛠 Tech Stack
-
-| Tech | Purpose |
-|------|---------|
-| Python | Backend & data processing |
-| Dash | Web framework |
-| Plotly | Interactive charts |
-| yfinance | Live market data (free, no API key) |
-| Pandas | Data manipulation |
-| Bootstrap | Responsive layout |
-
-## 🚀 Getting Started
-
-```bash
-# 1. Clone
-git clone https://github.com/YOUR_USER/live-dashboard.git
-cd live-dashboard
-
-# 2. Install
-pip install -r requirements.txt
-
-# 3. Run
-python app.py
-
-# 4. Open
-http://localhost:8050
-```
-
-## 📁 Structure
-
-```
-live-dashboard/
-├── app.py              # Main application
-├── assets/
-│   └── style.css       # Custom dark theme
-├── requirements.txt
-└── README.md
-```
-
-## 📊 Stocks Covered
+## Stocks covered
 
 AAPL · MSFT · GOOGL · AMZN · NVDA · META · TSLA
 
----
+## Run locally
 
-*Built for portfolio purposes · Data from Yahoo Finance*
+```bash
+git clone https://github.com/tomertir/live-dashboard.git
+cd live-dashboard
+pip install -r requirements.txt
+python app.py
+```
+
+Then open http://localhost:8050
+
+## Stack
+
+| Layer | Tool |
+|---|---|
+| Data | yfinance (Yahoo Finance) |
+| Processing | Pandas |
+| Charts | Plotly |
+| Web app | Dash |
+| Styling | Bootstrap + custom CSS |
+| Deployment | Render |
